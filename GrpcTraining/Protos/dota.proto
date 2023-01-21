@@ -1,0 +1,29 @@
+﻿syntax = "proto3";
+
+option csharp_namespace = "GrpcTraining";
+
+package dota;
+
+// The greeting service definition.
+service Dota {
+  // Sends a greeting
+  rpc GetHeroes (GetHeroesRequest) returns (GetHeroesResponse);
+}
+
+// The request message containing the user's name.
+message GetHeroesRequest {
+  
+}
+
+// The response message containing the greetings.
+message GetHeroesResponse {
+	repeated Hero heroes = 1;  
+}
+
+message Hero {
+  int32 id = 1;
+  string name = 2;
+  string localName = 3;
+  string primaryAttribute = 4;
+  string attackType = 5;
+} 
