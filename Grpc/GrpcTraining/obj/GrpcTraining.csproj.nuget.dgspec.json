@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-training\\GrpcTraining\\GrpcTraining.csproj": {}
+    "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-grpc-training\\Grpc\\GrpcTraining\\GrpcTraining.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-training\\GrpcTraining\\GrpcTraining.csproj": {
+    "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-grpc-training\\Grpc\\GrpcTraining\\GrpcTraining.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-training\\GrpcTraining\\GrpcTraining.csproj",
+        "projectUniqueName": "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-grpc-training\\Grpc\\GrpcTraining\\GrpcTraining.csproj",
         "projectName": "GrpcTraining",
-        "projectPath": "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-training\\GrpcTraining\\GrpcTraining.csproj",
+        "projectPath": "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-grpc-training\\Grpc\\GrpcTraining\\GrpcTraining.csproj",
         "packagesPath": "C:\\Users\\Zocnute\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-training\\GrpcTraining\\obj\\",
+        "outputPath": "C:\\Projects\\Zocnute\\Training\\Sorwe\\sorwe-grpc-training\\Grpc\\GrpcTraining\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Zocnute\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -47,6 +47,26 @@
             "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": {
               "target": "Package",
               "version": "[1.17.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Enrichers.Environment": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Serilog.Exceptions": {
+              "target": "Package",
+              "version": "[8.4.0, )"
+            },
+            "Serilog.Sinks.Debug": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Serilog.Sinks.Elasticsearch": {
+              "target": "Package",
+              "version": "[8.4.1, )"
             }
           },
           "imports": [

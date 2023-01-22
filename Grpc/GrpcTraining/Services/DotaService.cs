@@ -8,14 +8,18 @@ namespace GrpcTraining.Services
     public class DotaService : Dota.DotaBase
     {
         private readonly IOpenDotaClient _openDotaClient;
+        private readonly ILogger<DotaService> _logger;
 
-        public DotaService(IOpenDotaClient openDotaClient)
+        public DotaService(IOpenDotaClient openDotaClient, ILogger<DotaService> logger)
         {
             _openDotaClient = openDotaClient;
+            _logger = logger;
         }
 
         public override async Task<GetHeroesResponse> GetHeroes(GetHeroesRequest request, ServerCallContext context)
         {
+            _logger.LogInformation("DotaService GetHeroes - test message", DateTime.UtcNow);
+
             var openDotaheroes = await _openDotaClient.GetHeroes();
 
             var heroes = MapHeroes(openDotaheroes);
